@@ -1,0 +1,2 @@
+# full pipeline every morning at 8:00 AM
+0 8 * * * cd /Users/aidinbina/Real\ Estate\ Agent\ Project && ./run_daily.sh

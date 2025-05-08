@@ -1,0 +1,21 @@
+# supply env vars to every job
+OPENAI_API_KEY="YOUR_ACTUAL_SK-PROJ_KEY_HERE"
+GMAIL_APP_PASSWORD="rmkqficrhfrmqzhv"
+
+# —— TEST MODE: run every minute —— 
+* * * * * /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 "/Users/aidinbina/Real Estate Agent Project/News Fetcher.py"
+* * * * * /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 "/Users/aidinbina/Real Estate Agent Project/trend_analysis_store.py"
+* * * * * /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 "/Users/aidinbina/Real Estate Agent Project/send digest.py"
+# supply env vars to every job
+OPENAI_API_KEY="…FULL_SECRET_HERE…"
+GMAIL_APP_PASSWORD="rmkqficrhfrmqzhv"
+
+# fetch & archive every morning at 8:00AM
+0 8 * * * /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 "/Users/aidinbina/Real Estate Agent Project/News Fetcher.py"
+
+# send digest at 8:05AM
+5 8 * * * /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 "/Users/aidinbina/Real Estate Agent Project/send digest.py"
+
+# store trend snapshot at 8:10AM
+10 8 * * * /Library/Frameworks/Python.framework/Versions/3.13/bin/python3 "/Users/aidinbina/Real Estate Agent Project/trend_analysis_store.py"
+
