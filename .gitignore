@@ -3,3 +3,10 @@ cron_daily.log
 cron_send_digest.log
 cron_send_digest.log
 cron_send_digest.log
+real_estate_news.db
+cron_log.txt
+cron_daily.log
+cron_send_digest.log
+mycron*
+run_daily.sh
+run_send_digest.sh
